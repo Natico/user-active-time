@@ -3,7 +3,12 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    
+var siteUrl = "https://shahvani.com";
+var userName = "83Mehmet";
+var siteService = "profile";
+var serviceUrl = siteUrl+'/'+ siteService+'/'+ userName;
+  res.send(serviceUrl)
 })
 
 app.listen(port, () => {
